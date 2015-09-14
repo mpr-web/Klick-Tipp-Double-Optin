@@ -1,0 +1,23 @@
+<!-- opt in start -->
+<form action="https://www.klick-tipp.com/subscribe.php" method="post" accept-charset="UTF-8">
+<input type="text" name="FormValue_Fields[CustomFieldFirstName]" value="" placeholder="Dein Name" style="width: 49%;margin-bottom: 12px;"/><input type="text" name="FormValue_Fields[EmailAddress]" value="" placeholder="Deine E-Mail" style="width: 49%;margin-left: 5px"/>
+<input id="remember" name="remember" type="checkbox" onclick="validate()" /><label for="remember"> MomPreneurs Newsletter abonnieren?</label>       
+<button  id="submit" style="margin-bottom: 25px;margin-top: 10px;"  type="submit" name="FormButton_Subscribe">Ja, gerne!</button>
+
+<script type="text/javascript">
+
+/* id of webinar-only tag */
+var idnum = 48137; 
+
+function validate() {if (document.getElementById('remember').checked) {
+  idnum = 48138; /* id of Webinar + NL */
+  } 
+else { 
+  idnum = 48137; 
+  }
+document.getElementById('setidnum').value = idnum;
+}
+</script>
+
+<input type="hidden" id="setidnum" name="FormValue_FormID" value="48137" /></form>
+<!-- opt in end -->
